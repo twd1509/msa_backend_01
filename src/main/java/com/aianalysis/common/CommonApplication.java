@@ -47,7 +47,7 @@ public class CommonApplication {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true); // 세션 공유 허용
-        config.addAllowedOriginPattern("http://localhost:3000"); // React 주소
+        config.addAllowedOriginPattern("*"); // React 주소
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", config);
