@@ -147,7 +147,7 @@ public class MbrController {
 	        response.put("grade", httpSession.getAttribute("grade"));
 	       
 			//성공 시 1 반환
-			return ResponseEntity.ok().header("Set-Cookie", "JSESSIONID=" + httpSession.getId() + "; Path=/; HttpOnly; SameSite=None; Secure").body(response);
+			return ResponseEntity.ok().header("Set-Cookie", "JSESSIONID=" + httpSession.getId() + "; Path=/; HttpOnly; SameSite=None;").body(response);
 
 		}
 	}
